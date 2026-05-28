@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BIM Group – L&D Monthly Report – Tháng 04/2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f0f4f9;
+  --ink: #0c1a2e;
+  --muted: #56687e;
+  --line: #dde4ed;
+  --card: #ffffff;
+  --soft: #f6f9fc;
+  --navy: #081426;
+  --blue: #1d4ed8;
+  --blue-lt: #dbeafe;
+  --teal: #0d9488;
+  --teal-lt: #ccfbf1;
+  --red: #dc2626;
+  --red-lt: #fee2e2;
+  --orange: #ea580c;
+  --orange-lt: #ffedd5;
+  --green: #16a34a;
+  --green-lt: #dcfce7;
+  --amber: #d97706;
+  --amber-lt: #fef3c7;
+  --violet: #7c3aed;
+  --violet-lt: #ede9fe;
+  --shadow: 0 20px 60px rgba(12,26,46,.10);
+  --shadow-sm: 0 4px 18px rgba(12,26,46,.07);
+  --r: 20px;
+  --font: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background:radial-gradient(circle at 80% -10%,#dce9ff 0,transparent 34%),var(--bg);color:var(--ink);font-family:var(--font);font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+
+/* ── LAYOUT ── */
+.app{display:grid;grid-template-columns:272px minmax(0,1fr);min-height:100vh;width:100%}
+
+/* ── SIDEBAR ── */
+.sidebar{position:sticky;top:0;height:100vh;overflow-y:auto;background:var(--navy);color:#fff;padding:20px 14px;display:flex;flex-direction:column;z-index:10;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.1) transparent}
+.brand{display:flex;gap:12px;align-items:center;padding:6px 8px 20px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:8px}
+.mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#16a34a,#2563eb);display:grid;place-items:center;font-weight:800;font-size:13px;letter-spacing:.04em;color:#fff;font-family:var(--font);flex:0 0 auto}
+.brand-text b{display:block;font-size:13px;font-weight:700;letter-spacing:.05em}
+.brand-text small{display:block;color:#8aa0b8;font-size:10.5px;margin-top:2px}
+.nav-sec{margin:16px 8px 6px;color:#53667d;font-size:9.5px;text-transform:uppercase;letter-spacing:.13em;font-weight:700}
+.nav-btn{width:100%;border:0;background:transparent;color:#98a7b8;border-radius:12px;padding:9px 10px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-weight:600;font-size:12.5px;text-align:left;transition:.15s;gap:8px;font-family:var(--font)}
+.nav-btn:hover{background:rgba(255,255,255,.06);color:#e7edf4}
+.nav-btn.active{background:rgba(29,78,216,.22);color:#bfdbfe}
+.nav-btn svg{width:14px;height:14px;flex:0 0 auto;opacity:.7}
+.nav-badge{font-family:var(--mono);font-size:9.5px;font-weight:600;padding:2px 7px;border-radius:99px;background:rgba(255,255,255,.09);color:#cbd5e1}
+.nav-badge.red{background:var(--red);color:#fff}
+.sidebar-foot{margin-top:auto;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:12px 14px;color:#7d8ea3;font-size:11px;line-height:1.7;margin-top:16px}
+.sidebar-foot strong{color:#d6e1ee}
+
+/* ── MAIN ── */
+.main{padding:32px 40px 80px;max-width:1600px;width:100%}
+
+/* ── VIEWS ── */
+.view{display:none}
+.view.active{display:block;animation:fade .25s ease-out}
+@keyframes fade{from{opacity:.3;transform:translateY(7px)}to{opacity:1;transform:none}}
+
+/* ── HERO BANNER ── */
+.hero{background:linear-gradient(135deg,#071427 0%,#112248 55%,#0d1e3a 100%);border-radius:28px;padding:36px;color:#fff;display:grid;grid-template-columns:1.3fr .7fr;gap:24px;overflow:hidden;position:relative;margin-bottom:24px;box-shadow:var(--shadow)}
+.hero::after{content:'';position:absolute;right:-60px;top:-90px;width:380px;height:380px;background:radial-gradient(circle,rgba(37,99,235,.28),transparent 65%)}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.06);color:#bfdbfe;border-radius:999px;padding:6px 13px;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}
+.eyebrow span{width:6px;height:6px;border-radius:99px;background:#4ade80;display:inline-block;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-size:38px;line-height:1.13;font-weight:800;letter-spacing:-.05em;margin-bottom:12px}
+.hero p{color:#9fb0c5;font-size:13.5px;line-height:1.75;max-width:680px}
+.hero-kpis{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.hkpi{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px}
+.hkpi label{display:block;color:#7c8da6;font-size:9.5px;text-transform:uppercase;letter-spacing:.09em;font-weight:700;margin-bottom:6px}
+.hkpi strong{display:block;font-size:30px;line-height:1;font-weight:800;letter-spacing:-.04em}
+.hkpi small{display:block;margin-top:5px;font-size:11px;color:#6b7f96}
+
+/* ── KPI CARDS ── */
+.kpi-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-bottom:24px}
+.kcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow-sm);cursor:default;transition:.2s;position:relative;overflow:hidden}
+.kcard:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.kcard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:var(--r) var(--r) 0 0}
+.kcard.blue::before{background:linear-gradient(90deg,var(--blue),#60a5fa)}
+.kcard.green::before{background:linear-gradient(90deg,var(--green),#4ade80)}
+.kcard.amber::before{background:linear-gradient(90deg,var(--amber),#fbbf24)}
+.kcard.teal::before{background:linear-gradient(90deg,var(--teal),#2dd4bf)}
+.kcard.violet::before{background:linear-gradient(90deg,var(--violet),#a78bfa)}
+.kcard-label{font-size:10px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.kcard strong{display:block;font-size:32px;line-height:1;font-weight:800;letter-spacing:-.04em;margin-bottom:5px}
+.kcard .kcard-sub{font-size:11.5px;color:var(--muted)}
+.kcard .kcard-sub b{font-weight:700}
+.kcard .kcard-sub b.up{color:var(--green)}
+.kcard .kcard-sub b.dn{color:var(--red)}
+
+/* ── PANEL ── */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow-sm);padding:24px;margin-bottom:22px}
+.ph{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px;gap:12px;flex-wrap:wrap}
+.ph h2{font-size:18px;font-weight:800;letter-spacing:-.03em}
+.ph-sub{margin-top:3px;font-size:12.5px;color:var(--muted)}
+.ph-badge{align-self:flex-start;background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-family:var(--mono);font-size:11px;font-weight:600;color:#475569;white-space:nowrap}
+.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+
+/* ── TABLES ── */
+.tbl-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:600px}
+/* On mobile this min-width is overridden — see @media block */
+th{background:var(--soft);color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.07em;padding:11px 12px;text-align:left;border-bottom:1px solid var(--line);font-weight:700;white-space:nowrap;font-family:var(--font)}
+td{padding:11px 12px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:middle;line-height:1.4;font-family:var(--font)}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#f8fbff}
+.td-name{font-weight:700;font-size:13px;font-family:var(--font)}
+.td-mono{font-family:var(--font);font-size:12.5px;color:#475569;font-weight:600}
+.td-right{text-align:right}
+.td-center{text-align:center}
+
+/* ── BADGES ── */
+.badge{display:inline-flex;align-items:center;gap:4px;border-radius:999px;padding:4px 9px;font-size:10.5px;font-weight:700;white-space:nowrap}
+.b-green{background:var(--green-lt);color:#166534}
+.b-amber{background:var(--amber-lt);color:#92400e}
+.b-red{background:var(--red-lt);color:#991b1b}
+.b-blue{background:var(--blue-lt);color:#1e40af}
+.b-teal{background:var(--teal-lt);color:#0f766e}
+.b-violet{background:var(--violet-lt);color:#6d28d9}
+.b-gray{background:#e2e8f0;color:#475569}
+
+/* ── PROGRESS BAR ── */
+.pbar-wrap{margin-top:2px}
+.pbar-meta{display:flex;justify-content:space-between;font-size:11px;font-weight:600;margin-bottom:4px;font-family:var(--font);color:var(--muted)}
+.pbar{height:7px;border-radius:999px;background:#e5edf5;overflow:hidden}
+.pbar-fill{height:100%;border-radius:999px;transition:width .8s ease}
+.fill-green{background:linear-gradient(90deg,#16a34a,#4ade80)}
+.fill-amber{background:linear-gradient(90deg,#d97706,#fbbf24)}
+.fill-red{background:linear-gradient(90deg,#dc2626,#f87171)}
+.fill-blue{background:linear-gradient(90deg,#1d4ed8,#60a5fa)}
+.fill-teal{background:linear-gradient(90deg,#0d9488,#2dd4bf)}
+
+/* ── STAT BOXES ── */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.sbox{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+.sbox-val{display:block;font-size:26px;font-weight:800;line-height:1;letter-spacing:-.04em}
+.sbox-lbl{display:block;margin-top:5px;font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;font-weight:700;color:var(--muted)}
+.s-blue .sbox-val{color:var(--blue)}
+.s-green .sbox-val{color:var(--green)}
+.s-amber .sbox-val{color:var(--amber)}
+.s-red .sbox-val{color:var(--red)}
+.s-teal .sbox-val{color:var(--teal)}
+.s-violet .sbox-val{color:var(--violet)}
+
+/* ── BAR CHART ── */
+.bar-chart{display:flex;flex-direction:column;gap:12px;margin-top:4px}
+.bc-row{display:grid;grid-template-columns:160px 1fr 70px;gap:12px;align-items:center}
+.bc-lbl{font-size:12.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:var(--font)}
+.bc-bar-bg{background:#e5edf5;border-radius:999px;height:9px;overflow:hidden}
+.bc-bar-fill{height:100%;border-radius:999px;transition:width .9s ease}
+.bc-val{font-family:var(--font);font-size:12.5px;font-weight:700;text-align:right;color:var(--ink)}
+
+/* ── DONUT CHART (CSS) ── */
+.donut-wrap{display:flex;align-items:center;gap:20px}
+.donut{position:relative;width:120px;height:120px;flex:0 0 auto}
+.donut svg{transform:rotate(-90deg)}
+.donut-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.donut-pct{font-size:22px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.donut-lbl{font-size:9.5px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.donut-legend{display:flex;flex-direction:column;gap:8px;flex:1;min-width:0}
+.dl-item{display:flex;align-items:center;gap:8px;font-size:12.5px;font-family:var(--font)}
+.dl-dot{width:9px;height:9px;border-radius:3px;flex:0 0 auto}
+.dl-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600;font-family:var(--font)}
+.dl-val{font-family:var(--font);font-size:12px;font-weight:700;color:var(--ink)}
+
+/* ── INFO CARDS (chỉ tiêu nhóm) ── */
+.info-card{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.ic-header{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.ic-title{font-size:13.5px;font-weight:700;font-family:var(--font);letter-spacing:-.02em;color:var(--ink)}
+.ic-row{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;gap:8px}
+.ic-label{color:var(--muted);font-weight:500;font-family:var(--font)}
+.ic-val{font-family:var(--font);font-size:12.5px;font-weight:700;color:var(--ink);text-align:right}
+
+/* ── REGION MAP TABLE ── */
+.region-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.rgn{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:15px}
+.rgn-name{font-size:13.5px;font-weight:700;margin-bottom:8px;font-family:var(--font);letter-spacing:-.02em}
+.rgn-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+.rstat{text-align:center}
+.rstat-val{display:block;font-size:18px;font-weight:800;letter-spacing:-.03em;font-family:var(--font)}
+.rstat-lbl{display:block;font-size:9px;text-transform:uppercase;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-top:2px;font-family:var(--font)}
+
+/* ── STATUS TABLE (chi tiết khóa học) ── */
+.status-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}
+.ss-card{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+.ss-num{font-size:28px;font-weight:800;letter-spacing:-.04em;line-height:1;font-family:var(--font)}
+.ss-lbl{font-size:10px;text-transform:uppercase;font-weight:700;color:var(--muted);letter-spacing:.07em;margin-top:5px;font-family:var(--font)}
+.ss-card.done .ss-num{color:var(--green)}
+.ss-card.ongoing .ss-num{color:var(--blue)}
+.ss-card.phasing .ss-num{color:var(--amber)}
+.ss-card.total .ss-num{color:var(--ink)}
+
+/* ── INDIVIDUAL TARGET ── */
+.ind-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.ind-card{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:16px}
+.ind-title{font-size:13.5px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px;font-family:var(--font);letter-spacing:-.02em}
+.ind-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--line);font-size:12.5px;gap:8px}
+.ind-row:last-child{border-bottom:none}
+.ind-name{font-weight:600;font-family:var(--font);color:var(--ink)}
+.ind-val{font-family:var(--font);font-size:12.5px;font-weight:700;text-align:right}
+.ind-met{color:var(--green)}
+.ind-unmet{color:var(--red)}
+.ind-in-prog{color:var(--amber)}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(0,0,0,.12);border-radius:999px}
+
+/* ══════════════════════════════════
+   MOBILE NAV – Hamburger + Drawer
+   ══════════════════════════════════ */
+.mobile-top{display:none;position:sticky;top:0;z-index:200;background:rgba(8,20,38,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.mob-bar{display:flex;align-items:center;justify-content:space-between;padding:11px 16px;gap:12px}
+.mob-brand{display:flex;flex-direction:column;color:#fff}
+.mob-brand b{font-size:13.5px;font-weight:700;letter-spacing:.02em;line-height:1.25}
+.mob-brand small{font-size:11px;color:#7d9ab0;margin-top:1px}
+.mob-hamburger{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:42px;height:42px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:12px;cursor:pointer;flex:0 0 auto;padding:0;transition:.2s}
+.mob-hamburger span{display:block;width:18px;height:2px;background:#d7e0ea;border-radius:2px;transition:transform .25s,opacity .25s}
+.mob-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.mob-hamburger.open span:nth-child(2){opacity:0}
+.mob-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* Overlay */
+.mob-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:190}
+.mob-overlay.open{display:block}
+
+/* Drawer */
+.mob-drawer{
+  position:fixed;top:0;left:0;width:80vw;max-width:290px;height:100%;
+  background:#07140e;z-index:210;
+  transform:translateX(-100%);
+  transition:transform .28s cubic-bezier(.4,0,.2,1);
+  display:flex;flex-direction:column;overflow-y:auto;
+  scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.08) transparent
+}
+.mob-drawer.open{transform:translateX(0)}
+.mob-drawer-head{
+  padding:20px 18px 16px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  display:flex;align-items:center;gap:12px
+}
+.mob-drawer-logo{
+  width:130px;height:46px;
+  background:linear-gradient(145deg,#fff,#f0f5ef);
+  border-radius:12px;padding:8px 12px;
+  box-shadow:0 4px 14px rgba(0,0,0,.22),inset 0 0 0 1px rgba(255,255,255,.7);
+  flex:0 0 auto
+}
+.mob-drawer-logo img{width:100%;height:100%;object-fit:contain;display:block}
+.mob-drawer-head .brand-text b{font-size:13px;font-weight:700;color:#f4fff8;display:block}
+.mob-drawer-head .brand-text small{font-size:10.5px;color:#8db09e;display:block;margin-top:2px}
+.mob-drawer-nav{padding:10px 10px;flex:1}
+.mob-nav-sec{margin:14px 8px 5px;color:#3a5e48;font-size:9.5px;text-transform:uppercase;letter-spacing:.13em;font-weight:700}
+.mob-nav-btn{
+  width:100%;border:1px solid transparent;background:transparent;color:#8caa96;
+  border-radius:12px;padding:11px 12px;
+  display:flex;justify-content:space-between;align-items:center;
+  cursor:pointer;font-weight:600;font-size:13px;text-align:left;
+  transition:.15s;gap:8px;font-family:var(--font);margin-bottom:2px
+}
+.mob-nav-btn:hover{background:rgba(255,255,255,.06);color:#dbeadf}
+.mob-nav-btn.active{
+  background:linear-gradient(135deg,rgba(0,107,63,.36),rgba(128,189,148,.14));
+  border-color:rgba(107,182,136,.24);color:#c8eed8
+}
+.mob-nav-badge{font-family:var(--mono);font-size:9.5px;font-weight:600;padding:2px 7px;border-radius:99px;background:rgba(255,255,255,.09);color:#cbd5e1;flex:0 0 auto}
+.mob-drawer-foot{margin:10px 14px 20px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:12px 14px;color:#7d8ea3;font-size:11px;line-height:1.75}
+.mob-drawer-foot strong{color:#d6e1ee}
+.mobile-scroll{display:none}
+.ms-btn{display:none}
+
+/* ══════════════════════════════════
+   TABLET  ≤ 1100px
+   ══════════════════════════════════ */
+@media(max-width:1100px){
+  .app{grid-template-columns:1fr}
+  .sidebar{display:none}
+  .mobile-top{display:block}
+  .main{padding:18px 14px 60px}
+  .hero{grid-template-columns:1fr;padding:28px 22px;gap:20px}
+  .kpi-grid{grid-template-columns:repeat(3,1fr)}
+  .grid2{grid-template-columns:1fr}
+  .grid3{grid-template-columns:repeat(2,1fr)}
+  .region-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .status-summary{grid-template-columns:repeat(2,1fr)}
+  .ind-grid{grid-template-columns:1fr}
+  .bc-row{grid-template-columns:140px 1fr 60px}
+}
+
+/* ══════════════════════════════════
+   PHONE  ≤ 680px  — comprehensive
+   ══════════════════════════════════ */
+@media(max-width:680px){
+  /* ── Critical: kill horizontal overflow ── */
+  html,body{overflow-x:hidden!important;width:100%!important}
+  .app,.main,.view{width:100%!important;max-width:100vw!important;overflow-x:hidden!important}
+
+  /* Layout */
+  .main{padding:14px 12px 48px;max-width:100%;overflow-x:hidden}
+
+  /* Hero */
+  .hero{padding:20px 16px;border-radius:20px;gap:16px;margin-bottom:14px}
+  .hero h1{font-size:26px;line-height:1.1;letter-spacing:-.04em}
+  .hero p{font-size:12.5px;line-height:1.65}
+  .hero-kpis{grid-template-columns:1fr 1fr;gap:8px}
+  .hkpi{padding:11px 12px;border-radius:14px}
+  .hkpi label{font-size:8.5px}
+  .hkpi strong{font-size:20px}
+  .hkpi small{font-size:10px}
+
+  /* KPI grid — 2 columns on phone */
+  .kpi-grid{grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+  .kcard{padding:14px;border-radius:16px}
+  .kcard strong{font-size:26px}
+  .kcard-label{font-size:9.5px}
+
+  /* All multi-col grids → single col */
+  .grid2,.grid3,.ind-grid,.region-grid{grid-template-columns:1fr!important;gap:10px}
+
+  /* Stat & status → 2 cols (they're small numbers, looks fine) */
+  .stat-grid{grid-template-columns:1fr 1fr!important;gap:8px}
+  .status-summary{grid-template-columns:1fr 1fr!important;gap:8px}
+  .sbox,.ss-card{padding:12px 10px}
+  .sbox-val{font-size:22px}
+  .ss-num{font-size:24px}
+
+  /* Panels */
+  .panel{padding:14px 12px;border-radius:18px;margin-bottom:12px;overflow:hidden}
+  .ph{gap:6px;margin-bottom:12px;flex-direction:column;align-items:flex-start}
+  .ph h2{font-size:15px;line-height:1.3}
+  .ph-sub{font-size:11.5px}
+  .ph-badge{font-size:10px;align-self:flex-start}
+
+  /* Bar chart */
+  .bc-row{grid-template-columns:1fr auto;gap:6px 10px;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:9px 10px}
+  .bc-bar-bg{grid-column:1/-1;margin-top:2px}
+  .bc-lbl{white-space:normal;font-size:12px;font-weight:600}
+  .bc-val{font-size:11px;font-weight:700}
+
+  /* Donut */
+  .donut-wrap{flex-direction:row;align-items:center;gap:14px;flex-wrap:wrap}
+  .donut{width:100px;height:100px}
+  .donut svg{width:100px;height:100px}
+  .donut-pct{font-size:20px}
+
+  /* Info cards */
+  .info-card{padding:13px}
+  .ic-header{flex-direction:row;align-items:center;gap:8px}
+  .ic-title{font-size:12.5px}
+
+  /* Region cards */
+  .rgn{padding:12px;border-radius:14px}
+  .rgn-stats{grid-template-columns:repeat(3,1fr)!important;gap:4px}
+  .rstat-val{font-size:16px}
+
+  /* Ind cards */
+  .ind-card{padding:13px;border-radius:16px}
+  .ind-title{font-size:12.5px}
+
+  /* Tables → card-style stacked rows */
+  .tbl-wrap{overflow:visible!important;width:100%!important}
+  table{min-width:0!important;width:100%!important;border-collapse:separate!important;border-spacing:0 8px!important;table-layout:auto!important}
+  thead{display:none!important}
+  tbody{display:block;width:100%}
+  tbody tr,tbody tr[style]{
+    display:block!important;width:100%!important;
+    border-radius:14px!important;
+    padding:8px 12px!important;
+    margin-bottom:0!important;
+    overflow:hidden!important
+  }
+  tbody tr:hover{background:inherit!important}
+  td{
+    display:flex!important;
+    justify-content:space-between!important;
+    align-items:center!important;
+    gap:8px!important;
+    width:100%!important;
+    padding:8px 0!important;
+    border-bottom:1px solid rgba(0,107,63,.08)!important;
+    text-align:right!important;
+    font-size:12px!important;
+    white-space:normal!important;
+    word-break:break-word!important
+  }
+  td:last-child{border-bottom:none!important}
+  td::before{
+    content:attr(data-label)!important;
+    flex:0 0 auto!important;
+    max-width:48%!important;
+    text-align:left!important;
+    color:var(--muted);
+    font-size:10px!important;
+    text-transform:uppercase!important;
+    letter-spacing:.06em!important;
+    font-weight:700!important;
+    line-height:1.3!important;
+    word-break:normal!important
+  }
+  td > *{flex-shrink:0;max-width:52%!important}
+  td .pbar{width:100%!important;max-width:100%!important}
+  td:empty{display:none!important}
+  .badge{white-space:nowrap}
+
+  /* Leaderboard */
+  .leader-person{align-items:flex-end;text-align:right}
+  .leader-hours{justify-content:flex-end}
+  .leader-meter{width:80px;min-width:60px}
+  .rank-medal{min-width:36px;height:30px;font-size:12px;border-radius:10px}
+}
+
+.logo-mark{background:#fff;border-radius:14px;padding:6px;box-shadow:0 8px 24px rgba(0,0,0,.16)}
+.logo-mark img{width:100%;height:100%;object-fit:contain;display:block}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   PREMIUM BIM GREEN THEME · visual refresh only · content preserved
+   ═══════════════════════════════════════════════════════════════ */
+:root{
+  --bg:#eef3ec;
+  --ink:#102019;
+  --muted:#607166;
+  --line:rgba(30,67,48,.13);
+  --card:rgba(255,255,255,.88);
+  --soft:#f5f8f3;
+  --navy:#07140e;
+  --blue:#0e7a4f;
+  --blue-lt:#e3f4ec;
+  --teal:#118f67;
+  --teal-lt:#ddf6ef;
+  --green:#006b3f;
+  --green-lt:#e1f3ea;
+  --amber:#b8860b;
+  --amber-lt:#fff6dd;
+  --violet:#496a55;
+  --violet-lt:#e7efe9;
+  --red:#c2413b;
+  --red-lt:#fee7e5;
+  --shadow:0 28px 90px rgba(6,31,19,.14);
+  --shadow-sm:0 12px 36px rgba(6,31,19,.08);
+  --r:24px;
+  --font:"Manrope","Be Vietnam Pro",ui-sans-serif,system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+html{background:#0a160f;}
+body{
+  background:
+    radial-gradient(circle at 8% -8%,rgba(170,210,185,.56) 0,transparent 34%),
+    radial-gradient(circle at 90% 4%,rgba(0,107,63,.17) 0,transparent 30%),
+    linear-gradient(135deg,#eef4ed 0%,#f8faf6 42%,#edf4ef 100%);
+  color:var(--ink);
+  font-family:var(--font);
+  letter-spacing:-.008em;
+}
+body::before{
+  content:"";
+  position:fixed;
+  top:0;left:0;right:0;bottom:0;
+  width:100%;height:100%;
+  pointer-events:none;
+  overflow:hidden;
+  background:
+    linear-gradient(rgba(255,255,255,.52),rgba(255,255,255,.08)),
+    repeating-linear-gradient(90deg,rgba(0,107,63,.026) 0,rgba(0,107,63,.026) 1px,transparent 1px,transparent 88px);
+  mix-blend-mode:multiply;
+  z-index:-1;
+}
+@media(min-width:1101px){.app{grid-template-columns:292px minmax(0,1fr);}}
+.sidebar{
+  background:
+    radial-gradient(circle at 18% 5%,rgba(36,124,84,.36),transparent 28%),
+    linear-gradient(180deg,#06120c 0%,#0d2418 54%,#07140e 100%);
+  border-right:1px solid rgba(218,235,224,.10);
+  box-shadow:18px 0 70px rgba(2,16,9,.22);
+  padding:22px 16px;
+}
+.brand{
+  flex-direction:column;
+  align-items:flex-start;
+  gap:12px;
+  padding:12px 10px 22px;
+  border-bottom:1px solid rgba(231,244,236,.11);
+}
+.logo-mark{
+  width:178px!important;
+  height:62px!important;
+  border-radius:18px;
+  padding:10px 14px;
+  background:linear-gradient(145deg,#fff,#f0f5ef);
+  box-shadow:0 22px 50px rgba(0,0,0,.30), inset 0 0 0 1px rgba(255,255,255,.72);
+}
+.logo-mark img{object-fit:contain;filter:saturate(1.08) contrast(1.04);}
+.brand-text b{
+  font-size:15px;
+  letter-spacing:.035em;
+  color:#f4fff8;
+}
+.brand-text small{font-size:11px;color:#9db7a8;}
+.nav-sec{color:#5e826e;margin-top:18px;}
+.nav-btn{
+  color:#a9bbaf;
+  border:1px solid transparent;
+  border-radius:15px;
+  padding:10px 11px;
+  margin:2px 0;
+}
+.nav-btn:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.06);color:#f3fbf6;}
+.nav-btn.active{
+  background:linear-gradient(135deg,rgba(0,107,63,.34),rgba(255,255,255,.07));
+  color:#dff9e8;
+  border-color:rgba(107,182,136,.26);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 8px 20px rgba(0,0,0,.14);
+}
+.nav-badge{background:rgba(221,242,230,.10);color:#d6eadc;border:1px solid rgba(255,255,255,.08);}
+.sidebar-foot{
+  background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.035));
+  border-color:rgba(255,255,255,.10);
+  color:#a4b8ab;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+.sidebar-foot strong{color:#effcf4;}
+.main{padding:36px 44px 90px;}
+.view.active{animation:fade .34s cubic-bezier(.2,.8,.2,1);}
+.hero{
+  background:
+    linear-gradient(135deg,rgba(5,22,13,.96) 0%,rgba(10,58,36,.94) 48%,rgba(3,38,22,.98) 100%),
+    radial-gradient(circle at 84% 8%,rgba(161,218,181,.42),transparent 34%);
+  border:1px solid rgba(222,245,231,.16);
+  border-radius:32px;
+  padding:42px;
+  box-shadow:0 34px 90px rgba(2,26,13,.30);
+  isolation:isolate;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:1px;
+  border-radius:31px;
+  background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,0) 34%,rgba(180,220,190,.08));
+  pointer-events:none;
+  z-index:0;
+}
+.hero::after{
+  right:-90px;top:-130px;width:430px;height:430px;
+  background:radial-gradient(circle,rgba(154,215,174,.32),transparent 64%);
+  z-index:0;
+}
+.hero>div{position:relative;z-index:1;}
+.eyebrow{
+  color:#d8f6df;
+  background:rgba(225,243,234,.10);
+  border-color:rgba(225,243,234,.18);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+.eyebrow span{background:#7ad28f;box-shadow:0 0 18px rgba(122,210,143,.75);}
+.hero h1{
+  font-size:44px;
+  letter-spacing:-.06em;
+  line-height:1.05;
+  text-wrap:balance;
+}
+.hero p{color:#bfd4c6;font-size:14px;max-width:720px;}
+.hkpi{
+  background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.055));
+  border-color:rgba(235,250,241,.16);
+  border-radius:20px;
+  backdrop-filter:blur(8px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.10);
+}
+.hkpi label{color:#b6cbbb;}
+.hkpi strong{font-size:32px;color:#ffffff;}
+.hkpi small{color:#9db4a5;}
+.kpi-grid{gap:16px;}
+.kcard,.panel,.info-card,.rgn,.ind-card,.sbox,.ss-card{
+  background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(251,253,250,.88));
+  border-color:rgba(20,83,45,.12);
+  box-shadow:var(--shadow-sm);
+  backdrop-filter:blur(10px);
+}
+.kcard{border-radius:24px;padding:20px;}
+.kcard:hover,.panel:hover{box-shadow:0 26px 70px rgba(7,38,22,.13);}
+.kcard::before{height:4px;opacity:.95;}
+.kcard.blue::before,.kcard.green::before,.kcard.teal::before{background:linear-gradient(90deg,#006b3f,#83c99a);}
+.kcard.amber::before{background:linear-gradient(90deg,#ad7b00,#e2bc54);}
+.kcard.violet::before{background:linear-gradient(90deg,#234a34,#8db79b);}
+.kcard-label{color:#667b6c;font-size:10.2px;}
+.kcard strong{font-size:34px;color:#102019;}
+.kcard .kcard-sub{color:#68796e;}
+.panel{border-radius:28px;padding:26px;margin-bottom:24px;}
+.ph h2{font-size:20px;letter-spacing:-.04em;color:#0e1f16;}
+.ph-sub{color:#67786d;}
+.ph-badge{
+  background:#f4f8f2;
+  border-color:rgba(0,107,63,.14);
+  color:#315342;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.65);
+}
+table{border-collapse:separate;border-spacing:0;overflow:hidden;}
+th{
+  background:linear-gradient(180deg,#f4f8f2,#eef5ef);
+  color:#52685a;
+  border-bottom:1px solid rgba(0,107,63,.13);
+  font-size:10.2px;
+}
+td{border-bottom:1px solid rgba(0,107,63,.10);}
+tbody tr:hover{background:#f5faf5;}
+.td-name{color:#122419;}
+.td-mono,.bc-val,.ic-val,.ind-val,.dl-val{color:#1a2f22;}
+.badge{border:1px solid rgba(0,0,0,.04);box-shadow:inset 0 1px 0 rgba(255,255,255,.45);}
+.b-blue{background:#e3f4ec;color:#075f3b;}
+.b-teal{background:#dcf3ea;color:#0a6549;}
+.b-green{background:#e0f4e7;color:#0a5c35;}
+.b-violet{background:#e8f0e8;color:#31513b;}
+.b-amber{background:#fff4d8;color:#7a5500;}
+.b-gray{background:#e9eee9;color:#536257;}
+.pbar,.bc-bar-bg{background:#e1e9e1;box-shadow:inset 0 1px 2px rgba(9,44,25,.08);}
+.fill-green,.fill-blue,.fill-teal{background:linear-gradient(90deg,#006b3f,#7fc896);}
+.fill-amber{background:linear-gradient(90deg,#b37b00,#efc95e);}
+.fill-red{background:linear-gradient(90deg,#b9352f,#eb7e72);}
+.fill-violet{background:linear-gradient(90deg,#234a34,#93baa0);}
+.bc-row{grid-template-columns:180px 1fr 76px;}
+.bc-lbl{font-weight:700;color:#1a2f22;}
+.donut-wrap{padding:4px 2px;}
+.donut-center{color:#123120;}
+.dl-dot{border-radius:99px;box-shadow:0 0 0 3px rgba(255,255,255,.86);}
+.info-card,.rgn,.ind-card{border-radius:22px;}
+.ic-title,.rgn-name,.ind-title{color:#14261b;font-weight:800;}
+.rstat-val,.ss-num,.sbox-val{letter-spacing:-.05em;}
+.leaderboard-panel{position:relative;}
+.leaderboard-panel::before{
+  content:"";
+  position:absolute;inset:0 0 auto 0;height:5px;
+  background:linear-gradient(90deg,#006b3f,#c6a15b,#006b3f);
+}
+.rank-medal{
+  background:linear-gradient(145deg,#f8faf7,#e7efe7);
+  border:1px solid rgba(0,107,63,.12);
+  box-shadow:0 8px 18px rgba(9,42,23,.08), inset 0 1px 0 #fff;
+}
+.leader-hours strong{color:#006b3f;}
+.leader-meter{background:#e2eae3;}
+.leader-meter div{background:linear-gradient(90deg,#006b3f,#7fc896);}
+.mobile-top{
+  background:rgba(6,20,12,.96);
+  border-bottom:1px solid rgba(255,255,255,.07);
+  box-shadow:0 8px 30px rgba(2,16,9,.18);
+}
+.mob-hamburger{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.13);}
+.mob-nav-btn.active{background:linear-gradient(135deg,rgba(0,107,63,.36),rgba(128,189,148,.14));border-color:rgba(107,182,136,.24);color:#c8eed8;}
+.mob-drawer{background:#07140e;}
+.mob-drawer-head{border-color:rgba(255,255,255,.08);}
+.mob-nav-sec{color:#3a5e48;}
+.mob-nav-btn{color:#8caa96;}
+.mob-nav-btn:hover{background:rgba(255,255,255,.06);color:#dbeadf;}
+@media(max-width:1100px){
+  .main{padding:20px 14px 62px;}
+}
+@media(max-width:680px){
+  body{background:linear-gradient(180deg,#edf4ed 0%,#f8faf6 100%);}
+  .hero{padding:20px 16px;border-radius:22px;}
+  .hero h1{font-size:26px;}
+  .kpi-grid{grid-template-columns:1fr 1fr!important;}
+  .panel{border-radius:20px;padding:14px 12px;}
+  .ph h2{font-size:15px;}
+  tbody tr,tbody tr[style]{
+    background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(248,251,247,.94))!important;
+    border-color:rgba(0,107,63,.12);
+    box-shadow:0 6px 20px rgba(7,38,22,.06);
+  }
+  td::before{color:#5c7063;}
+  .bc-row{background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(248,251,247,.94));border-color:rgba(0,107,63,.11);}
+}
+
+
+/* ── Typography refinements ── */
+body{font-feature-settings:"liga" 1,"kern" 1;text-rendering:optimizeLegibility;}
+.ph-sub,.kcard-sub,.ic-label,.dl-name,.bc-lbl,.ind-row{letter-spacing:-.004em;}
+.hero p,.ph-sub{line-height:1.72;}
+.kcard-sub,.ic-row,.ind-row,td{line-height:1.5;}
+.hkpi small,.kcard .kcard-sub,.ph-sub{font-weight:600;}
+.pbar-empty{position:relative;background:repeating-linear-gradient(135deg,#e2eae3 0,#e2eae3 8px,#d8e2d9 8px,#d8e2d9 16px)!important;opacity:.78;}
+.fill-empty{background:transparent!important;}
+.pbar-empty::after{content:"N/A";position:absolute;right:8px;top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:8px;font-weight:700;color:#7b8c80;letter-spacing:.04em;}
+
+/* Leaderboard */
+.leaderboard-panel{overflow:hidden;position:relative}
+.leaderboard-table th:first-child,.leaderboard-table td:first-child{width:72px}
+.rank-medal{display:inline-flex;align-items:center;justify-content:center;min-width:42px;height:34px;border-radius:12px;background:#f1f5f9;font-weight:800;font-family:var(--mono);font-size:13px;box-shadow:inset 0 0 0 1px rgba(12,26,46,.06)}
+.leader-person{display:flex;flex-direction:column;gap:2px;min-width:0}
+.leader-person b{font-size:13px;line-height:1.25}
+.leader-person small{font-size:11px;color:var(--muted);line-height:1.35}
+.leader-hours{display:flex;justify-content:flex-end;align-items:baseline;gap:4px;white-space:nowrap}
+.leader-hours strong{font-family:var(--mono);font-size:14px;color:var(--blue)}
+.leader-hours span{font-size:10.5px;color:var(--muted);font-weight:700}
+.leader-meter{height:6px;width:108px;margin-left:auto;margin-top:5px;background:#e5edf5;border-radius:999px;overflow:hidden}
+.leader-meter div{height:100%;border-radius:999px;background:linear-gradient(90deg,#1d4ed8,#2dd4bf)}
+
+/* ── FINAL: kill any horizontal overflow on mobile ── */
+@media(max-width:1100px){
+  html,body{overflow-x:hidden!important;max-width:100vw!important}
+  .app{grid-template-columns:1fr!important;width:100%!important;max-width:100vw!important}
+  .main{width:100%!important;max-width:100%!important;overflow-x:hidden!important}
+  .hero,.panel,.kpi-grid,.kcard,.view{max-width:100%!important;overflow-x:hidden!important}
+  table{min-width:0!important}
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   DESKTOP SIDEBAR FIX · prevent left menu footer gap when browser zoom changes
+   Only affects desktop layout; mobile drawer remains unchanged.
+   ═══════════════════════════════════════════════════════════════ */
+@media (min-width:1101px){
+  html,body{
+    min-height:100%;
+  }
+  .app{
+    grid-template-columns:292px minmax(0,1fr)!important;
+    min-height:100vh!important;
+    min-height:100dvh!important;
+    position:relative;
+  }
+  .app::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    width:292px;
+    background:
+      radial-gradient(circle at 18% 5%,rgba(36,124,84,.36),transparent 28%),
+      linear-gradient(180deg,#06120c 0%,#0d2418 54%,#07140e 100%);
+    border-right:1px solid rgba(218,235,224,.10);
+    box-shadow:18px 0 70px rgba(2,16,9,.22);
+    z-index:0;
+    pointer-events:none;
+  }
+  .sidebar{
+    position:fixed!important;
+    top:0!important;
+    left:0!important;
+    bottom:0!important;
+    width:292px!important;
+    height:auto!important;
+    min-height:100vh!important;
+    min-height:100dvh!important;
+    max-height:none!important;
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+    z-index:50!important;
+  }
+  .main{
+    grid-column:2!important;
+    min-width:0;
+    position:relative;
+    z-index:1;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Mobile overlay -->
+<div class="mob-overlay" id="mobOverlay" onclick="closeDrawer()"></div>
+
+<!-- Mobile drawer -->
+<div class="mob-drawer" id="mobDrawer">
+  <div class="mob-drawer-head">
+    <div class="mob-drawer-logo"><img src="https://cdn.haitrieu.com/wp-content/uploads/2023/07/Logo-Bim-Group.png" alt="BIM Group logo"></div>
+    <div class="brand-text">
+      <b>Phòng Đào tạo</b>
+      <small>Tháng 4/2026 · Toàn Tập đoàn</small>
+    </div>
+  </div>
+  <div class="mob-drawer-nav">
+    <div class="mob-nav-sec">Báo cáo</div>
+    <button class="mob-nav-btn active" onclick="showView('overview');closeDrawer()">
+      <span>📊 Tổng quan</span>
+    </button>
+    <button class="mob-nav-btn" onclick="showView('byblock');closeDrawer()">
+      <span>🏢 Theo khối ngành</span>
+    </button>
+    <button class="mob-nav-btn" onclick="showView('bytype');closeDrawer()">
+      <span>📚 Theo loại chương trình</span>
+    </button>
+    <button class="mob-nav-btn" onclick="showView('byregion');closeDrawer()">
+      <span>📍 Theo khu vực</span>
+    </button>
+    <button class="mob-nav-btn" onclick="showView('target');closeDrawer()">
+      <span>🎯 Chỉ tiêu đào tạo</span>
+    </button>
+    <button class="mob-nav-btn" onclick="showView('status');closeDrawer()">
+      <span>✅ Tình trạng lớp học</span>
+    </button>
+  </div>
+  <div class="mob-drawer-foot">
+    <strong>Kỳ báo cáo:</strong> 24/03/2026 – 23/04/2026<br>
+    <strong>Tổng NS tập đoàn:</strong> 5.000 người<br>
+    <strong>Cập nhật:</strong> 27/04/2026
+  </div>
+</div>
+
+<!-- Mobile top nav -->
+<div class="mobile-top">
+  <div class="mob-bar">
+    <div class="mob-brand">
+      <div>
+        <b>BIM Group · L&D</b>
+        <small id="mobActiveLabel">📊 Tổng quan</small>
+      </div>
+    </div>
+    <button class="mob-hamburger" id="mobHamburger" onclick="toggleDrawer()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</div>
+
+<div class="app">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="brand">
+    <div class="mark logo-mark"><img src="https://cdn.haitrieu.com/wp-content/uploads/2023/07/Logo-Bim-Group.png" alt="BIM Group logo"></div>
+    <div class="brand-text">
+      <b>Phòng Đào tạo</b>
+      <small>Tháng 4/2026 · Toàn Tập đoàn</small>
+    </div>
+  </div>
+
+  <div class="nav-sec">Báo cáo</div>
+  <button class="nav-btn active" onclick="showView('overview')">
+    <span>📊 Tổng quan</span>
+  </button>
+  <button class="nav-btn" onclick="showView('byblock')">
+    <span>🏢 Theo khối ngành</span>
+  </button>
+  <button class="nav-btn" onclick="showView('bytype')">
+    <span>📚 Theo loại chương trình</span>
+  </button>
+  <button class="nav-btn" onclick="showView('byregion')">
+    <span>📍 Theo khu vực</span>
+  </button>
+  <button class="nav-btn" onclick="showView('target')">
+    <span>🎯 Chỉ tiêu đào tạo</span>
+  </button>
+  <button class="nav-btn" onclick="showView('status')">
+    <span>✅ Tình trạng lớp học</span>
+  </button>
+
+  <div class="sidebar-foot">
+    <strong>Kỳ báo cáo:</strong> 24/03/2026 – 23/04/2026<br>
+    <strong>Tổng NS tập đoàn:</strong> 5.000 người<br>
+    <strong>Cập nhật:</strong> 27/04/2026
+  </div>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- VIEW 1: TỔNG QUAN -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="view active" id="view-overview">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div>
+      <div class="eyebrow"><span></span> Báo cáo tháng 04 · 2026</div>
+      <h1>Báo cáo L&D<br>Toàn Tập đoàn</h1>
+      <p>Tổng hợp hoạt động đào tạo & phát triển tháng 04/2026 – bao gồm kết quả thực tế trong kỳ và luỹ kế từ đầu năm 2026 trên toàn hệ thống BIM Group.</p>
+    </div>
+    <div class="hero-kpis">
+      <div class="hkpi">
+        <label>Số lớp (lũy kế)</label>
+        <strong>471</strong>
+        <small>+76 trong kỳ</small>
+      </div>
+      <div class="hkpi">
+        <label>Lượt học (lũy kế)</label>
+        <strong>4.832</strong>
+        <small>+343 trong kỳ</small>
+      </div>
+      <div class="hkpi">
+        <label>Giờ học (lũy kế)</label>
+        <strong>4.907</strong>
+        <small>309,7 giờ trong kỳ</small>
+      </div>
+      <div class="hkpi">
+        <label>Chi phí (lũy kế)</label>
+        <strong>47,7M</strong>
+        <small>30,2M VNĐ trong kỳ</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- KPI cards -->
+  <div class="kpi-grid">
+    <div class="kcard blue">
+      <div class="kcard-label">Tổng số lớp trong kỳ</div>
+      <strong>76</strong>
+      <div class="kcard-sub">Lũy kế: <b>471</b> lớp | Phát sinh: <b>7</b></div>
+    </div>
+    <div class="kcard green">
+      <div class="kcard-label">Tổng lượt học trong kỳ</div>
+      <strong>343</strong>
+      <div class="kcard-sub">Lũy kế: <b>4.832</b> lượt</div>
+    </div>
+    <div class="kcard amber">
+      <div class="kcard-label">Giờ giảng trong kỳ</div>
+      <strong>29,3</strong>
+      <div class="kcard-sub">Lũy kế: <b>132</b> giờ giảng</div>
+    </div>
+    <div class="kcard teal">
+      <div class="kcard-label">Chi phí trong kỳ</div>
+      <strong>30,2M</strong>
+      <div class="kcard-sub">Lũy kế: <b>47,7M</b> VNĐ</div>
+    </div>
+    <div class="kcard violet">
+      <div class="kcard-label">Giờ học trong kỳ</div>
+      <strong>309,7</strong>
+      <div class="kcard-sub">Nhân viên: <b>115,9</b>h · CV: <b>192,1</b>h</div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <!-- Tình trạng lớp học -->
+    <div class="panel">
+      <div class="ph">
+        <div>
+          <h2>Tình trạng lớp học (lũy kế)</h2>
+          <div class="ph-sub">Phân loại trạng thái 471 lớp đã và đang triển khai</div>
+        </div>
+      </div>
+      <div class="bar-chart">
+        <div class="bc-row">
+          <div class="bc-lbl">Hoàn thành</div>
+          <div class="bc-bar-bg"><div class="bc-bar-fill fill-green" style="width:70.5%"></div></div>
+          <div class="bc-val">332</div>
+        </div>
+        <div class="bc-row">
+          <div class="bc-lbl">Đang diễn ra</div>
+          <div class="bc-bar-bg"><div class="bc-bar-fill fill-blue" style="width:26.8%"></div></div>
+          <div class="bc-val">126</div>
+        </div>
+        <div class="bc-row">
+          <div class="bc-lbl">Phát sinh</div>
+          <div class="bc-bar-bg"><div class="bc-bar-fill fill-amber" style="width:2.8%"></div></div>
+          <div class="bc-val">13</div>
+        </div>
+        <div class="bc-row">
+          <div class="bc-lbl">Lùi lịch</div>
+          <div class="bc-bar-bg"><div class="bc-bar-fill fill-red" style="width:0%"></div></div>
+          <div class="bc-val">0</div>
+        </div>
+        <div class="bc-row">
+          <div class="bc-lbl">Huỷ</div>
+          <div class="bc-bar-bg"><div class="bc-bar-fill fill-red" style="width:0%"></div></div>
+          <div class="bc-val">0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hình thức đào tạo -->
+    <div class="panel">
+      <div class="ph">
+        <div>
+          <h2>Hình thức đào tạo</h2>
+          <div class="ph-sub">Phân bổ lớp học trong kỳ theo phương thức</div>
+        </div>
+      </div>
+      <div class="donut-wrap" style="margin-top:8px">
+        <div class="donut">
+          <svg viewBox="0 0 36 36" width="120" height="120">
+            <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e5edf5" stroke-width="3.5"/>
+            <!-- OJT: ≈43% = 155/360*circumference(100) = 43.4% of 99.9 -->
+            <circle cx="18" cy="18" r="15.9" fill="none" stroke="#1d4ed8" stroke-width="3.5" stroke-dasharray="43.4 56.6" stroke-dashoffset="0"/>
+            <!-- Tập trung: ≈32% -->
+            <circle cx="18" cy="18" r="15.9" fill="none" stroke="#0d9488" stroke-width="3.5" stroke-dasharray="32 68" stroke-dashoffset="-43.4"/>
+            <!-- LMS: ≈18% -->
+            <circle cx="18" cy="18" r="15.9" fill="none" stroke="#d97706" stroke-width="3.5" stroke-dasharray="18 82" stroke-dashoffset="-75.4"/>
+            <!-- Kết hợp: ≈7% -->
+            <circle cx="18" cy="18" r="15.9" fill="none" stroke="#7c3aed" stroke-width="3.5" stroke-dasharray="7 93" stroke-dashoffset="-93.4"/>
+          </svg>
+          <div class="donut-center">
+            <div class="donut-pct">76</div>
+            <div class="donut-lbl">lớp kỳ</div>
+          </div>
+        </div>
+        <div class="donut-legend">
+          <div class="dl-item"><div class="dl-dot" style="background:#1d4ed8"></div><div class="dl-name">OJT (tại chỗ)</div><div class="dl-val">~33 lớp</div></div>
+          <div class="dl-item"><div class="dl-dot" style="background:#0d9488"></div><div class="dl-name">Tập trung</div><div class="dl-val">~24 lớp</div></div>
+          <div class="dl-item"><div class="dl-dot" style="background:#d97706"></div><div class="dl-name">LMS (online)</div><div class="dl-val">~14 lớp</div></div>
+          <div class="dl-item"><div class="dl-dot" style="background:#7c3aed"></div><div class="dl-name">Kết hợp</div><div class="dl-val">~5 lớp</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Giờ học theo nhóm chức danh -->
+  <div class="panel">
+    <div class="ph">
+      <h2>Giờ học trong kỳ theo nhóm chức danh</h2>
+      <span class="ph-badge">Tổng: 309,7 giờ</span>
+    </div>
+    <div class="grid3">
+      <div class="info-card">
+        <div class="ic-header"><div class="ic-title">👷 Nhân viên (Band 1–3)</div><span class="badge b-blue">115,9 giờ</span></div>
+        <div class="ic-row"><span class="ic-label">Lượt học</span><span class="ic-val">128</span></div>
+        <div class="ic-row"><span class="ic-label">Chỉ tiêu tối thiểu</span><span class="ic-val">18 giờ/năm</span></div>
+        <div class="pbar-wrap">
+          <div class="pbar-meta"><span>Tiến độ giờ chia sẻ</span><span>Chưa có dữ liệu</span></div>
+          <div class="pbar pbar-empty"><div class="pbar-fill fill-empty" style="width:0%"></div></div>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="ic-header"><div class="ic-title">💼 Chuyên viên (Band 4–5)</div><span class="badge b-teal">192,1 giờ</span></div>
+        <div class="ic-row"><span class="ic-label">Lượt học</span><span class="ic-val">210</span></div>
+        <div class="ic-row"><span class="ic-label">Chỉ tiêu tối thiểu</span><span class="ic-val">30 giờ/năm</span></div>
+        <div class="pbar-wrap">
+          <div class="pbar-meta"><span>Giờ chia sẻ</span><span>5,8 giờ</span></div>
+          <div class="pbar"><div class="pbar-fill fill-teal" style="width:48%"></div></div>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="ic-header"><div class="ic-title">🏅 Quản lý (Band 6–9)</div><span class="badge b-violet">1,6 giờ</span></div>
+        <div class="ic-row"><span class="ic-label">Lượt học (QLCT + QLCC)</span><span class="ic-val">5 + 0</span></div>
+        <div class="ic-row"><span class="ic-label">Chỉ tiêu tối thiểu</span><span class="ic-val">30 giờ + 12 chia sẻ</span></div>
+        <div class="pbar-wrap">
+          <div class="pbar-meta"><span>Giờ giảng (chia sẻ)</span><span>3 giờ</span></div>
+          <div class="pbar"><div class="pbar-fill fill-amber" style="width:25%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /view-overview -->
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- VIEW 2: THEO KHỐI NGÀNH -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="view" id="view-byblock">
+  <div class="panel">
+    <div class="ph">
+      <div><h2>Kết quả đào tạo theo khối ngành</h2><div class="ph-sub">Số liệu trong kỳ (tháng 04/2026)</div></div>
+      <span class="ph-badge">9 đơn vị</span>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Khối ngành / Đơn vị</th>
+            <th class="td-right">Số lớp</th>
+            <th class="td-right">Lượt học</th>
+            <th class="td-right">Giờ học</th>
+            <th class="td-right">Chi phí (VNĐ)</th>
+            <th class="td-right">Giờ giảng</th>
+            <th>Trạng thái</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="td-name">Ngành Bất động sản</span></td>
+            <td class="td-right td-mono">4</td><td class="td-right td-mono">12</td>
+            <td class="td-right td-mono">12,0</td><td class="td-right td-mono">—</td>
+            <td class="td-right td-mono">3</td>
+            <td><span class="badge b-green">Hoạt động</span></td>
+          </tr>
+          <tr>
+            <td><span class="td-name" style="padding-left:16px">↳ Khối Xây dựng</span></td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">—</td>
+            <td class="td-right td-mono">0</td>
+            <td><span class="badge b-gray">Không PS</span></td>
+          </tr>
+          <tr>
+            <td><span class="td-name" style="padding-left:16px">↳ Ban QLTS</span></td>
+            <td class="td-right td-mono">1</td><td class="td-right td-mono">4</td>
+            <td class="td-right td-mono">4,0</td><td class="td-right td-mono">—</td>
+            <td class="td-right td-mono">1</td>
+            <td><span class="badge b-green">Hoạt động</span></td>
+          </tr>
+          <tr>
+            <td><span class="td-name" style="padding-left:16px">↳ Khách sạn & TMDV</span></td>
+            <td class="td-right td-mono">3</td><td class="td-right td-mono">8</td>
+            <td class="td-right td-mono">8,0</td><td class="td-right td-mono">—</td>
+            <td class="td-right td-mono">2</td>
+            <td><span class="badge b-green">Hoạt động</span></td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><span class="td-name">Elite (Fitness)</span></td>
+            <td class="td-right td-mono">22</td><td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">—</td>
+            <td class="td-right td-mono">19</td>
+            <td><span class="badge b-blue">Chủ lực</span></td>
+          </tr>
+          <tr>
+            <td><span class="td-name">Ban Năng lượng</span></td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">4</td>
+            <td class="td-right td-mono">1,6</td><td class="td-right td-mono">—</td>
+            <td class="td-right td-mono">0</td>
+            <td><span class="badge b-amber">Nhỏ</span></td>
+          </tr>
+          <tr>
+            <td><span class="td-name">Nông nghiệp – Thực phẩm</span></td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">2</td>
+            <td class="td-right td-mono">0,9</td><td class="td-right td-mono">—</td>
+            <td class="td-right td-mono">0</td>
+            <td><span class="badge b-gray">Nhỏ</span></td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><span class="td-name">Khối Công nghiệp</span></td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">—</td>
+            <td class="td-right td-mono">0</td>
+            <td><span class="badge b-gray">Không PS</span></td>
+          </tr>
+          <tr>
+            <td><span class="td-name">VP Tập đoàn (HO)</span></td>
+            <td class="td-right td-mono">16</td><td class="td-right td-mono">325</td>
+            <td class="td-right td-mono">295,1</td><td class="td-right td-mono">30.240.000</td>
+            <td class="td-right td-mono">0</td>
+            <td><span class="badge b-teal">Cao nhất</span></td>
+          </tr>
+          <tr>
+            <td><span class="td-name">VP Chi nhánh (tổng hợp)</span></td>
+            <td class="td-right td-mono">34</td><td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">—</td>
+            <td class="td-right td-mono">7,3</td>
+            <td><span class="badge b-green">Hoạt động</span></td>
+          </tr>
+          <tr style="background:#eef6ff;font-weight:700">
+            <td><b>TỔNG CỘNG</b></td>
+            <td class="td-right td-mono">76</td><td class="td-right td-mono">343</td>
+            <td class="td-right td-mono">309,7</td><td class="td-right td-mono">30.240.000</td>
+            <td class="td-right td-mono">29,3</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bar chart khối -->
+  <div class="panel">
+    <div class="ph"><h2>Lượt học theo khối ngành (trong kỳ)</h2></div>
+    <div class="bar-chart">
+      <div class="bc-row">
+        <div class="bc-lbl">VP Tập đoàn (HO)</div>
+        <div class="bc-bar-bg"><div class="bc-bar-fill fill-blue" style="width:94.7%"></div></div>
+        <div class="bc-val">325</div>
+      </div>
+      <div class="bc-row">
+        <div class="bc-lbl">Ngành Bất động sản</div>
+        <div class="bc-bar-bg"><div class="bc-bar-fill fill-teal" style="width:3.5%"></div></div>
+        <div class="bc-val">12</div>
+      </div>
+      <div class="bc-row">
+        <div class="bc-lbl">Ban Năng lượng</div>
+        <div class="bc-bar-bg"><div class="bc-bar-fill fill-green" style="width:1.2%"></div></div>
+        <div class="bc-val">4</div>
+      </div>
+      <div class="bc-row">
+        <div class="bc-lbl">Nông nghiệp – Thực phẩm</div>
+        <div class="bc-bar-bg"><div class="bc-bar-fill fill-amber" style="width:0.6%"></div></div>
+        <div class="bc-val">2</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- VIEW 3: THEO LOẠI CHƯƠNG TRÌNH -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="view" id="view-bytype">
+  <div class="panel">
+    <div class="ph">
+      <div><h2>Kết quả theo loại chương trình đào tạo</h2><div class="ph-sub">Trong kỳ tháng 04/2026</div></div>
+      <span class="ph-badge">6 loại CT</span>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Loại chương trình</th>
+            <th class="td-right">Lớp (kỳ)</th>
+            <th class="td-right">Lượt học (kỳ)</th>
+            <th class="td-right">Giờ học (kỳ)</th>
+            <th class="td-right">Lớp (LK)</th>
+            <th class="td-right">Lượt (LK)</th>
+            <th class="td-right">Giờ (LK)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="td-name">Chứng chỉ bắt buộc NN</span></td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">1</td><td class="td-right td-mono">25</td>
+            <td class="td-right td-mono">400,0</td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><span class="td-name">Chuyên môn nghiệp vụ</span></td>
+            <td class="td-right td-mono">6</td><td class="td-right td-mono">11</td>
+            <td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">28</td><td class="td-right td-mono">264</td>
+            <td class="td-right td-mono">512,8</td>
+          </tr>
+          <tr>
+            <td><span class="td-name">Kỹ năng bổ trợ</span></td>
+            <td class="td-right td-mono">6</td><td class="td-right td-mono">8</td>
+            <td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">17</td><td class="td-right td-mono">33</td>
+            <td class="td-right td-mono">62,5</td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><span class="td-name">Năng lực quản lý</span></td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">0</td>
+          </tr>
+          <tr>
+            <td><span class="td-name" style="font-weight:700;color:var(--blue)">Quy trình, quy định & tuân thủ</span></td>
+            <td class="td-right td-mono" style="font-weight:700">44</td>
+            <td class="td-right td-mono" style="font-weight:700">241</td>
+            <td class="td-right td-mono">239,2</td>
+            <td class="td-right td-mono">379</td><td class="td-right td-mono">2.482</td>
+            <td class="td-right td-mono">2.115,9</td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><span class="td-name">Hội nhập & định hướng</span></td>
+            <td class="td-right td-mono">20</td><td class="td-right td-mono">83</td>
+            <td class="td-right td-mono">70,4</td>
+            <td class="td-right td-mono">44</td><td class="td-right td-mono">337</td>
+            <td class="td-right td-mono">343,8</td>
+          </tr>
+          <tr>
+            <td><span class="td-name">Năng lực số (LMS)</span></td>
+            <td class="td-right td-mono">0</td><td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">0</td>
+            <td class="td-right td-mono">2</td><td class="td-right td-mono">736</td>
+            <td class="td-right td-mono">1.472,0</td>
+          </tr>
+          <tr style="background:#eef6ff;font-weight:700">
+            <td><b>TỔNG</b></td>
+            <td class="td-right td-mono">76</td><td class="td-right td-mono">343</td>
+            <td class="td-right td-mono">309,6</td>
+            <td class="td-right td-mono">471</td><td class="td-right td-mono">3.877</td>
+            <td class="td-right td-mono">4.906,9</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="ph"><h2>Tỷ trọng lượt học theo loại chương trình (lũy kế)</h2></div>
+    <div class="bar-chart">
+      <div class="bc-row">
+        <div class="bc-lbl">QT, QĐ & tuân thủ</div>
+        <div class="bc-bar-bg"><div class="bc-bar-fill fill-blue" style="width:64%"></div></div>
+        <div class="bc-val">2.482</div>
+      </div>
+      <div class="bc-row">
+        <div class="bc-lbl">Năng lực số (LMS)</div>
+        <div class="bc-bar-bg"><div class="bc-bar-fill fill-teal" style="width:19%"></div></div>
+        <div class="bc-val">736</div>
+      </div>
+      <div class="bc-row">
+        <div class="bc-lbl">Hội nhập & ĐH</div>
+        <div class="bc-bar-bg"><div class="bc-bar-fill fill-green" style="width:8.7%"></div></div>
+        <div class="bc-val">337</div>
+      </div>
+      <div class="bc-row">
+        <div class="bc-lbl">Chuyên môn NV</div>
+        <div class="bc-bar-bg"><div class="bc-bar-fill fill-amber" style="width:6.8%"></div></div>
+        <div class="bc-val">264</div>
+      </div>
+      <div class="bc-row">
+        <div class="bc-lbl">Chứng chỉ NN</div>
+        <div class="bc-bar-bg"><div class="bc-bar-fill fill-violet" style="width:0.6%"></div></div>
+        <div class="bc-val">25</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- VIEW 4: THEO KHU VỰC -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="view" id="view-byregion">
+  <div class="panel">
+    <div class="ph">
+      <div><h2>Kết quả đào tạo theo khu vực</h2><div class="ph-sub">Trong kỳ tháng 04/2026 – 9 khu vực</div></div>
+      <span class="ph-badge">9 khu vực</span>
+    </div>
+    <div class="region-grid">
+      <div class="rgn">
+        <div class="rgn-name">📍 Hà Nội</div>
+        <div class="rgn-stats">
+          <div class="rstat"><span class="rstat-val" style="color:var(--blue)">39</span><span class="rstat-lbl">Lớp</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--teal)">216</span><span class="rstat-lbl">Lượt</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--green)">208</span><span class="rstat-lbl">Giờ</span></div>
+        </div>
+        <div class="pbar-wrap" style="margin-top:10px">
+          <div class="pbar"><div class="pbar-fill fill-blue" style="width:86%"></div></div>
+        </div>
+      </div>
+      <div class="rgn">
+        <div class="rgn-name">📍 Quảng Ninh</div>
+        <div class="rgn-stats">
+          <div class="rstat"><span class="rstat-val" style="color:var(--blue)">14</span><span class="rstat-lbl">Lớp</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--teal)">81</span><span class="rstat-lbl">Lượt</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--green)">68,8</span><span class="rstat-lbl">Giờ</span></div>
+        </div>
+        <div class="pbar-wrap" style="margin-top:10px">
+          <div class="pbar"><div class="pbar-fill fill-teal" style="width:33%"></div></div>
+        </div>
+      </div>
+      <div class="rgn">
+        <div class="rgn-name">📍 An Giang / Phú Quốc</div>
+        <div class="rgn-stats">
+          <div class="rstat"><span class="rstat-val" style="color:var(--blue)">15</span><span class="rstat-lbl">Lớp</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--teal)">23</span><span class="rstat-lbl">Lượt</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--green)">18,8</span><span class="rstat-lbl">Giờ</span></div>
+        </div>
+        <div class="pbar-wrap" style="margin-top:10px">
+          <div class="pbar"><div class="pbar-fill fill-green" style="width:18%"></div></div>
+        </div>
+      </div>
+      <div class="rgn">
+        <div class="rgn-name">📍 Phú Thọ (Thanh Xuân)</div>
+        <div class="rgn-stats">
+          <div class="rstat"><span class="rstat-val" style="color:var(--blue)">5</span><span class="rstat-lbl">Lớp</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--teal)">9</span><span class="rstat-lbl">Lượt</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--green)">3,0</span><span class="rstat-lbl">Giờ</span></div>
+        </div>
+        <div class="pbar-wrap" style="margin-top:10px">
+          <div class="pbar"><div class="pbar-fill fill-amber" style="width:6%"></div></div>
+        </div>
+      </div>
+      <div class="rgn">
+        <div class="rgn-name">📍 Đà Nẵng</div>
+        <div class="rgn-stats">
+          <div class="rstat"><span class="rstat-val" style="color:var(--blue)">2</span><span class="rstat-lbl">Lớp</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--teal)">11</span><span class="rstat-lbl">Lượt</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--green)">8,0</span><span class="rstat-lbl">Giờ</span></div>
+        </div>
+        <div class="pbar-wrap" style="margin-top:10px">
+          <div class="pbar"><div class="pbar-fill fill-amber" style="width:4%"></div></div>
+        </div>
+      </div>
+      <div class="rgn">
+        <div class="rgn-name">📍 Vinh</div>
+        <div class="rgn-stats">
+          <div class="rstat"><span class="rstat-val" style="color:var(--blue)">1</span><span class="rstat-lbl">Lớp</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--teal)">3</span><span class="rstat-lbl">Lượt</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--green)">3,0</span><span class="rstat-lbl">Giờ</span></div>
+        </div>
+        <div class="pbar-wrap" style="margin-top:10px">
+          <div class="pbar"><div class="pbar-fill fill-green" style="width:2%"></div></div>
+        </div>
+      </div>
+      <div class="rgn">
+        <div class="rgn-name">📍 Khánh Hoà / HCM / Lào</div>
+        <div class="rgn-stats">
+          <div class="rstat"><span class="rstat-val" style="color:var(--muted)">0</span><span class="rstat-lbl">Lớp</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--muted)">0</span><span class="rstat-lbl">Lượt</span></div>
+          <div class="rstat"><span class="rstat-val" style="color:var(--muted)">0</span><span class="rstat-lbl">Giờ</span></div>
+        </div>
+        <div class="pbar-wrap" style="margin-top:10px">
+          <div class="pbar"><div class="pbar-fill fill-red" style="width:0%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bảng so sánh lũy kế -->
+  <div class="panel">
+    <div class="ph"><h2>So sánh lũy kế theo khu vực</h2><div class="ph-sub">Từ đầu năm 2026</div></div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Khu vực</th>
+            <th class="td-right">Lớp (LK)</th>
+            <th class="td-right">Lượt (LK)</th>
+            <th class="td-right">Giờ (LK)</th>
+            <th class="td-right">Chi phí (LK)</th>
+            <th>Tỷ trọng lớp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Hà Nội</b></td>
+            <td class="td-right td-mono">287</td><td class="td-right td-mono">2.471</td>
+            <td class="td-right td-mono">3.439,2</td><td class="td-right td-mono">30.240.000</td>
+            <td>
+              <div class="pbar" style="width:180px"><div class="pbar-fill fill-blue" style="width:61%"></div></div>
+            </td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><b>Quảng Ninh</b></td>
+            <td class="td-right td-mono">66</td><td class="td-right td-mono">737</td>
+            <td class="td-right td-mono">537,4</td><td class="td-right td-mono">—</td>
+            <td><div class="pbar" style="width:180px"><div class="pbar-fill fill-teal" style="width:14%"></div></div></td>
+          </tr>
+          <tr>
+            <td><b>Phú Thọ</b></td>
+            <td class="td-right td-mono">38</td><td class="td-right td-mono">164</td>
+            <td class="td-right td-mono">135,7</td><td class="td-right td-mono">—</td>
+            <td><div class="pbar" style="width:180px"><div class="pbar-fill fill-green" style="width:8%"></div></div></td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><b>An Giang / Phú Quốc</b></td>
+            <td class="td-right td-mono">43</td><td class="td-right td-mono">298</td>
+            <td class="td-right td-mono">212,5</td><td class="td-right td-mono">—</td>
+            <td><div class="pbar" style="width:180px"><div class="pbar-fill fill-amber" style="width:9.1%"></div></div></td>
+          </tr>
+          <tr>
+            <td><b>Khánh Hoà</b></td>
+            <td class="td-right td-mono">3</td><td class="td-right td-mono">32</td>
+            <td class="td-right td-mono">421,0</td><td class="td-right td-mono">17.500.000</td>
+            <td><div class="pbar" style="width:180px"><div class="pbar-fill fill-violet" style="width:0.6%"></div></div></td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><b>Đà Nẵng</b></td>
+            <td class="td-right td-mono">18</td><td class="td-right td-mono">89</td>
+            <td class="td-right td-mono">104,0</td><td class="td-right td-mono">—</td>
+            <td><div class="pbar" style="width:180px"><div class="pbar-fill fill-green" style="width:3.8%"></div></div></td>
+          </tr>
+          <tr>
+            <td><b>Vinh</b></td>
+            <td class="td-right td-mono">15</td><td class="td-right td-mono">82</td>
+            <td class="td-right td-mono">53,1</td><td class="td-right td-mono">—</td>
+            <td><div class="pbar" style="width:180px"><div class="pbar-fill fill-amber" style="width:3.2%"></div></div></td>
+          </tr>
+          <tr style="background:#eef6ff;font-weight:700">
+            <td><b>TỔNG</b></td>
+            <td class="td-right td-mono">471</td><td class="td-right td-mono">3.877</td>
+            <td class="td-right td-mono">4.907,0</td><td class="td-right td-mono">47.740.000</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- VIEW 5: CHỈ TIÊU ĐÀO TẠO -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="view" id="view-target">
+
+  <!-- Chỉ tiêu tối thiểu theo nhóm -->
+  <div class="panel">
+    <div class="ph">
+      <div><h2>Chỉ tiêu đào tạo tối thiểu 2026 theo nhóm</h2><div class="ph-sub">Áp dụng cho toàn bộ 5.000 nhân sự tập đoàn</div></div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Nhóm chức danh</th>
+            <th class="td-center">CT Giờ HỌC</th>
+            <th class="td-right">Số giờ / năm</th>
+            <th class="td-center">CT Giờ CHIA SẺ</th>
+            <th class="td-right">Số giờ / năm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="td-name">Nhóm 1: LĐ phổ thông – NV (Band 1,2,3)</span></td>
+            <td class="td-center"><span class="badge b-blue">100%</span></td>
+            <td class="td-right td-mono">18 giờ</td>
+            <td class="td-center"><span class="badge b-gray">—</span></td>
+            <td class="td-right td-mono">0</td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><span class="td-name">Nhóm 2: Chuyên viên (Band 4,5)</span></td>
+            <td class="td-center"><span class="badge b-blue">100%</span></td>
+            <td class="td-right td-mono">30 giờ</td>
+            <td class="td-center"><span class="badge b-gray">—</span></td>
+            <td class="td-right td-mono">0</td>
+          </tr>
+          <tr>
+            <td><span class="td-name">Nhóm 3: Quản lý cấp trung (Band 6,7)</span></td>
+            <td class="td-center"><span class="badge b-teal">70%</span></td>
+            <td class="td-right td-mono">30 giờ</td>
+            <td class="td-center"><span class="badge b-violet">30%</span></td>
+            <td class="td-right td-mono">12 giờ</td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><span class="td-name">Nhóm 4: Quản lý cấp cao (Band 8,9)</span></td>
+            <td class="td-center"><span class="badge b-teal">70%</span></td>
+            <td class="td-right td-mono">30 giờ</td>
+            <td class="td-center"><span class="badge b-violet">30%</span></td>
+            <td class="td-right td-mono">12 giờ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Tra cứu kết quả ví dụ -->
+  <div class="panel">
+    <div class="ph">
+      <div><h2>Kết quả luỹ kế theo nhóm chức danh</h2><div class="ph-sub">Từ đầu năm 2026 – dữ liệu tổng hợp từ hệ thống LMS</div></div>
+    </div>
+    <div class="ind-grid">
+      <div class="ind-card">
+        <div class="ind-title">👷 Nhân viên (Band 1–3)</div>
+        <div class="ind-row"><span class="ic-label">Lượt học lũy kế</span><span class="ind-val">2.832</span></div>
+        <div class="ind-row"><span class="ic-label">Giờ học (kỳ)</span><span class="ind-val">115,9 giờ</span></div>
+        <div class="ind-row"><span class="ic-label">Giờ giảng / chia sẻ</span><span class="ind-val ind-in-prog">1 giờ</span></div>
+        <div class="ind-row"><span class="ic-label">Chỉ tiêu năm</span><span class="ind-val">18 giờ/người</span></div>
+      </div>
+      <div class="ind-card">
+        <div class="ind-title">💼 Chuyên viên (Band 4–5)</div>
+        <div class="ind-row"><span class="ic-label">Lượt học lũy kế</span><span class="ind-val">1.776</span></div>
+        <div class="ind-row"><span class="ic-label">Giờ học (kỳ)</span><span class="ind-val">192,1 giờ</span></div>
+        <div class="ind-row"><span class="ic-label">Giờ giảng / chia sẻ</span><span class="ind-val ind-in-prog">5,8 giờ</span></div>
+        <div class="ind-row"><span class="ic-label">Chỉ tiêu năm</span><span class="ind-val">30 giờ/người</span></div>
+      </div>
+      <div class="ind-card">
+        <div class="ind-title">🏅 QLCT (Band 6–7)</div>
+        <div class="ind-row"><span class="ic-label">Lượt học lũy kế</span><span class="ind-val">197</span></div>
+        <div class="ind-row"><span class="ic-label">Giờ học (kỳ)</span><span class="ind-val">1,6 giờ</span></div>
+        <div class="ind-row"><span class="ic-label">Giờ chia sẻ (kỳ)</span><span class="ind-val ind-in-prog">3 giờ</span></div>
+        <div class="ind-row"><span class="ic-label">Chỉ tiêu</span><span class="ind-val">30 học + 12 chia sẻ</span></div>
+      </div>
+      <div class="ind-card">
+        <div class="ind-title">🎖️ QLCC (Band 8–9)</div>
+        <div class="ind-row"><span class="ic-label">Lượt học lũy kế</span><span class="ind-val">27</span></div>
+        <div class="ind-row"><span class="ic-label">Giờ học (kỳ)</span><span class="ind-val ind-unmet">0 giờ</span></div>
+        <div class="ind-row"><span class="ic-label">Giờ chia sẻ (kỳ)</span><span class="ind-val ind-unmet">0 giờ</span></div>
+        <div class="ind-row"><span class="ic-label">Chỉ tiêu</span><span class="ind-val">30 học + 12 chia sẻ</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leaderboard cá nhân -->
+  <div class="panel leaderboard-panel">
+    <div class="ph">
+      <div><h2>Top 10 cá nhân có giờ học cao nhất</h2><div class="ph-sub">Xếp hạng theo tổng giờ học lũy kế từ dữ liệu người học</div></div>
+      <span class="ph-badge">Leaderboard · Top 10</span>
+    </div>
+    <div class="tbl-wrap">
+      <table class="leaderboard-table">
+        <thead>
+          <tr>
+            <th class="td-center">Hạng</th>
+            <th>Mã NV</th>
+            <th>Họ tên / Vị trí</th>
+            <th>Nhóm</th>
+            <th>Đơn vị</th>
+            <th class="td-right">Lượt học</th>
+            <th class="td-right">Giờ học LK</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-center"><span class="rank-medal">🥇</span></td>
+            <td class="td-mono">227739</td>
+            <td>
+              <div class="leader-person"><b>Ngô Trinh Tùng</b><small>Chủ trì Cơ điện Cấp 2</small></div>
+            </td>
+            <td><span class="badge b-teal">Chuyên viên</span></td>
+            <td>Khối Xây dựng</td>
+            <td class="td-right td-mono">17</td>
+            <td class="td-right">
+              <div class="leader-hours"><strong>31,9</strong><span>giờ</span></div>
+              <div class="leader-meter"><div style="width:100.0%"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-center"><span class="rank-medal">🥈</span></td>
+            <td class="td-mono">212214</td>
+            <td>
+              <div class="leader-person"><b>Lê Ngọc Hiên</b><small>Trưởng ca vận hành</small></div>
+            </td>
+            <td><span class="badge b-teal">Chuyên viên</span></td>
+            <td>Ban Năng lượng</td>
+            <td class="td-right td-mono">3</td>
+            <td class="td-right">
+              <div class="leader-hours"><strong>19,2</strong><span>giờ</span></div>
+              <div class="leader-meter"><div style="width:60.4%"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-center"><span class="rank-medal">🥉</span></td>
+            <td class="td-mono">226817</td>
+            <td>
+              <div class="leader-person"><b>Đoàn Huy Phong</b><small>Nhân viên phục vụ</small></div>
+            </td>
+            <td><span class="badge b-blue">Nhân viên</span></td>
+            <td>Khối Khách sạn &amp; Thương mại Dịch vụ</td>
+            <td class="td-right td-mono">18</td>
+            <td class="td-right">
+              <div class="leader-hours"><strong>18,0</strong><span>giờ</span></div>
+              <div class="leader-meter"><div style="width:56.4%"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-center"><span class="rank-medal">#04</span></td>
+            <td class="td-mono">222131</td>
+            <td>
+              <div class="leader-person"><b>Nguyễn Mạnh Tùng</b><small>Nhân viên pha chế</small></div>
+            </td>
+            <td><span class="badge b-blue">Nhân viên</span></td>
+            <td>Khối Khách sạn &amp; Thương mại Dịch vụ</td>
+            <td class="td-right td-mono">18</td>
+            <td class="td-right">
+              <div class="leader-hours"><strong>18,0</strong><span>giờ</span></div>
+              <div class="leader-meter"><div style="width:56.4%"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-center"><span class="rank-medal">#05</span></td>
+            <td class="td-mono">226597</td>
+            <td>
+              <div class="leader-person"><b>Lê Gia Huy</b><small>Nhân viên pha chế</small></div>
+            </td>
+            <td><span class="badge b-blue">Nhân viên</span></td>
+            <td>Khối Khách sạn &amp; Thương mại Dịch vụ</td>
+            <td class="td-right td-mono">18</td>
+            <td class="td-right">
+              <div class="leader-hours"><strong>18,0</strong><span>giờ</span></div>
+              <div class="leader-meter"><div style="width:56.4%"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-center"><span class="rank-medal">#06</span></td>
+            <td class="td-mono">226554</td>
+            <td>
+              <div class="leader-person"><b>Chu Thị Thu Trang</b><small>Nhân viên phục vụ</small></div>
+            </td>
+            <td><span class="badge b-blue">Nhân viên</span></td>
+            <td>Khối Khách sạn &amp; Thương mại Dịch vụ</td>
+            <td class="td-right td-mono">18</td>
+            <td class="td-right">
+              <div class="leader-hours"><strong>18,0</strong><span>giờ</span></div>
+              <div class="leader-meter"><div style="width:56.4%"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-center"><span class="rank-medal">#07</span></td>
+            <td class="td-mono">212621</td>
+            <td>
+              <div class="leader-person"><b>Đinh Công Chính</b><small>Tổ trưởng tổ vệ sinh</small></div>
+            </td>
+            <td><span class="badge b-teal">Chuyên viên</span></td>
+            <td>Ban Năng lượng</td>
+            <td class="td-right td-mono">2</td>
+            <td class="td-right">
+              <div class="leader-hours"><strong>18,0</strong><span>giờ</span></div>
+              <div class="leader-meter"><div style="width:56.4%"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-center"><span class="rank-medal">#08</span></td>
+            <td class="td-mono">212849</td>
+            <td>
+              <div class="leader-person"><b>Vũ Minh Tân</b><small>Trưởng ca vận hành</small></div>
+            </td>
+            <td><span class="badge b-teal">Chuyên viên</span></td>
+            <td>Ban Năng lượng</td>
+            <td class="td-right td-mono">2</td>
+            <td class="td-right">
+              <div class="leader-hours"><strong>18,0</strong><span>giờ</span></div>
+              <div class="leader-meter"><div style="width:56.4%"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-center"><span class="rank-medal">#09</span></td>
+            <td class="td-mono">221535</td>
+            <td>
+              <div class="leader-person"><b>Trương Xuân Thìn</b><small>Chuyên viên An toàn lao động</small></div>
+            </td>
+            <td><span class="badge b-teal">Chuyên viên</span></td>
+            <td>Ban Năng lượng</td>
+            <td class="td-right td-mono">2</td>
+            <td class="td-right">
+              <div class="leader-hours"><strong>18,0</strong><span>giờ</span></div>
+              <div class="leader-meter"><div style="width:56.4%"></div></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-center"><span class="rank-medal">#10</span></td>
+            <td class="td-mono">215304</td>
+            <td>
+              <div class="leader-person"><b>Phạm Quốc Hòa</b><small>Trưởng ca vận hành</small></div>
+            </td>
+            <td><span class="badge b-teal">Chuyên viên</span></td>
+            <td>Ban Năng lượng</td>
+            <td class="td-right td-mono">2</td>
+            <td class="td-right">
+              <div class="leader-hours"><strong>18,0</strong><span>giờ</span></div>
+              <div class="leader-meter"><div style="width:56.4%"></div></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- VIEW 6: TÌNH TRẠNG LỚP HỌC -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="view" id="view-status">
+
+  <div class="panel">
+    <div class="ph">
+      <div><h2>Tình trạng triển khai lớp học</h2><div class="ph-sub">Tháng 04/2026 – Lũy kế từ đầu năm</div></div>
+    </div>
+
+    <!-- Summary cards -->
+    <div class="status-summary">
+      <div class="ss-card done">
+        <div class="ss-num">332</div>
+        <div class="ss-lbl">✅ Hoàn thành (LK)</div>
+      </div>
+      <div class="ss-card ongoing">
+        <div class="ss-num">126</div>
+        <div class="ss-lbl">🔄 Đang diễn ra (LK)</div>
+      </div>
+      <div class="ss-card phasing">
+        <div class="ss-num">13</div>
+        <div class="ss-lbl">⚡ Phát sinh (LK)</div>
+      </div>
+      <div class="ss-card total">
+        <div class="ss-num">471</div>
+        <div class="ss-lbl">📋 Tổng lũy kế</div>
+      </div>
+    </div>
+
+    <!-- Kỳ này -->
+    <div style="margin-bottom:10px;font-weight:700;font-size:13px">Trong kỳ tháng 04/2026</div>
+    <div class="stat-grid" style="margin-bottom:20px">
+      <div class="sbox s-green"><span class="sbox-val">28</span><span class="sbox-lbl">Hoàn thành</span></div>
+      <div class="sbox s-blue"><span class="sbox-val">41</span><span class="sbox-lbl">Đang diễn ra</span></div>
+      <div class="sbox s-amber"><span class="sbox-val">7</span><span class="sbox-lbl">Phát sinh</span></div>
+      <div class="sbox"><span class="sbox-val">0</span><span class="sbox-lbl">Lùi / Huỷ</span></div>
+    </div>
+
+    <!-- KPI đào tạo -->
+    <div style="margin-bottom:10px;font-weight:700;font-size:13px">Đánh giá KPI đào tạo</div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>KPI</th>
+            <th class="td-center">Mục tiêu</th>
+            <th class="td-right">Đạt (lũy kế)</th>
+            <th class="td-right">Tỷ lệ</th>
+            <th>Đánh giá</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>KPI về tổ chức đúng thời hạn</b></td>
+            <td class="td-center">Đúng lịch</td>
+            <td class="td-right td-mono">~80% lớp</td>
+            <td class="td-right td-mono">≥ 90%</td>
+            <td><span class="badge b-green">Đạt</span></td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><b>Điểm kiểm tra ≥ 7 (tỷ lệ đạt khá giỏi)</b></td>
+            <td class="td-center">≥ 90%</td>
+            <td class="td-right td-mono">Phần lớn đạt</td>
+            <td class="td-right td-mono">~85–95%</td>
+            <td><span class="badge b-amber">Gần đạt</span></td>
+          </tr>
+          <tr>
+            <td><b>Đánh giá đào tạo ≥ 4/5</b></td>
+            <td class="td-center">≥ 90%</td>
+            <td class="td-right td-mono">Đa số đạt</td>
+            <td class="td-right td-mono">~88–96%</td>
+            <td><span class="badge b-green">Đạt</span></td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td><b>Tỷ lệ nhận chứng chỉ (khóa thuê ngoài)</b></td>
+            <td class="td-center">≥ 90%</td>
+            <td class="td-right td-mono">Áp dụng hạn chế</td>
+            <td class="td-right td-mono">N/A</td>
+            <td><span class="badge b-gray">Không áp dụng</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Chi tiết giảng viên nội bộ nổi bật -->
+  <div class="panel">
+    <div class="ph">
+      <div><h2>Giảng viên nội bộ tiêu biểu</h2><div class="ph-sub">157 giảng viên nội bộ – 2 đối tác thuê ngoài trong kỳ</div></div>
+      <span class="ph-badge">157 GVNB</span>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Mã NV</th>
+            <th>Họ tên</th>
+            <th>Vị trí</th>
+            <th>Nhóm</th>
+            <th>Đơn vị</th>
+            <th class="td-right">Điểm TB KT</th>
+            <th class="td-right">Điểm ĐG</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-mono">226380</td><td><b>Nguyễn Tiến Phong</b></td>
+            <td>Quản lý nhà hàng</td><td><span class="badge b-teal">Chuyên viên</span></td>
+            <td>KS & TMDV</td>
+            <td class="td-right td-mono">10,0</td><td class="td-right td-mono">5,0</td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td class="td-mono">226485</td><td><b>Nguyễn Phương Thảo</b></td>
+            <td>Quản lý Lounge</td><td><span class="badge b-teal">Chuyên viên</span></td>
+            <td>KS & TMDV</td>
+            <td class="td-right td-mono">9,2</td><td class="td-right td-mono">5,0</td>
+          </tr>
+          <tr>
+            <td class="td-mono">227103</td><td><b>Nguyễn Tiến Đức</b></td>
+            <td>Chuyên gia pha chế</td><td><span class="badge b-teal">Chuyên viên</span></td>
+            <td>KS & TMDV</td>
+            <td class="td-right td-mono">8,6</td><td class="td-right td-mono">5,0</td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td class="td-mono">227371</td><td><b>Phan Thanh Hùng</b></td>
+            <td>Kỹ sư trưởng</td><td><span class="badge b-violet">QLCT</span></td>
+            <td>TMQT BĐS</td>
+            <td class="td-right td-mono">9,3</td><td class="td-right td-mono">4,9</td>
+          </tr>
+          <tr>
+            <td class="td-mono">218443</td><td><b>Đỗ Thị Thủy</b></td>
+            <td>Giám sát giặt là</td><td><span class="badge b-gray">Nhân viên</span></td>
+            <td>KS & TMDV</td>
+            <td class="td-right td-mono">9,9</td><td class="td-right td-mono">5,0</td>
+          </tr>
+          <tr style="background:#f8fbff">
+            <td class="td-mono">225833</td><td><b>Lê Thị Cẩm Vân</b></td>
+            <td>CV QTHT LMS</td><td><span class="badge b-teal">Chuyên viên</span></td>
+            <td>VP Tập đoàn</td>
+            <td class="td-right td-mono">9,0</td><td class="td-right td-mono">4,5</td>
+          </tr>
+          <tr>
+            <td class="td-mono">226731</td><td><b>Hoàng Tuấn Đức</b></td>
+            <td>Giám sát nhà hàng</td><td><span class="badge b-teal">Chuyên viên</span></td>
+            <td>KS & TMDV</td>
+            <td class="td-right td-mono">9,0</td><td class="td-right td-mono">5,0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<script>
+function applyMobileTableLabels() {
+  document.querySelectorAll('table').forEach(table => {
+    const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent.trim());
+    table.querySelectorAll('tbody tr').forEach(row => {
+      Array.from(row.children).forEach((cell, idx) => {
+        if (headers[idx]) cell.setAttribute('data-label', headers[idx]);
+      });
+    });
+  });
+}
+document.addEventListener('DOMContentLoaded', applyMobileTableLabels);
+applyMobileTableLabels();
+
+/* ── Label map for active tab indicator ── */
+const VIEW_LABELS = {
+  overview: '📊 Tổng quan',
+  byblock:  '🏢 Theo khối ngành',
+  bytype:   '📚 Loại chương trình',
+  byregion: '📍 Theo khu vực',
+  target:   '🎯 Chỉ tiêu đào tạo',
+  status:   '✅ Tình trạng lớp học'
+};
+
+function showView(id) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.mob-nav-btn').forEach(b => b.classList.remove('active'));
+
+  const el = document.getElementById('view-' + id);
+  if (el) el.classList.add('active');
+
+  document.querySelectorAll('.nav-btn').forEach(b => {
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').includes("'" + id + "'")) {
+      b.classList.add('active');
+    }
+  });
+  document.querySelectorAll('.mob-nav-btn').forEach(b => {
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').includes("'" + id + "'")) {
+      b.classList.add('active');
+    }
+  });
+
+  /* Update topbar active label */
+  const lbl = document.getElementById('mobActiveLabel');
+  if (lbl && VIEW_LABELS[id]) lbl.textContent = VIEW_LABELS[id];
+
+  /* Scroll main to top on mobile */
+  if (window.innerWidth <= 1100) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+/* ── Drawer helpers ── */
+function openDrawer() {
+  document.getElementById('mobDrawer').classList.add('open');
+  document.getElementById('mobOverlay').classList.add('open');
+  document.getElementById('mobHamburger').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeDrawer() {
+  document.getElementById('mobDrawer').classList.remove('open');
+  document.getElementById('mobOverlay').classList.remove('open');
+  document.getElementById('mobHamburger').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function toggleDrawer() {
+  if (document.getElementById('mobDrawer').classList.contains('open')) {
+    closeDrawer();
+  } else {
+    openDrawer();
+  }
+}
+
+/* Close drawer on Escape */
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+</script>
+</body>
+</html>
